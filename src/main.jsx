@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import AboutMe from './AboutMe';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import Resume from './Resume';
+import AboutMe from './components/AboutMe';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 import App from './App.jsx';
 import './App.css';
 import './index.css';
