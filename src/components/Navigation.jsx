@@ -7,6 +7,7 @@ function Navigation (){
   const getActiveClass = (path) => (location.pathname ===path ? 'active' : '');
 
     return (
+        
         <nav>
             <ul>
                 <li>
