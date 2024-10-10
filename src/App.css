@@ -1,42 +1,42 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  /* Color Palette */
+  --primary-color: #FFBE0B; /* Yellow */
+  --secondary-color: #FB5607; /* Orange */
+  --accent-color: #FF006E; /* Pink */
+  --highlight-color: #8338EC; /* Purple */
+  --link-color: #3A86FF; /* Blue */
+  --neutral-background: #F5F5F5; /* Light neutral grey/tan */
+  
+  /* Typography */
+  --font-family: 'Roboto', sans-serif;
+  --heading-font-weight: bold;
+  --body-font-weight: normal;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+
+  /* Border */
+  --border-radius: 5px;
+
+  /* Shadows */
+  --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Transition */
+  --transition-duration: 0.3s;
+  --transition-ease: ease-in-out;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.active {
+  color: #FF006E; /* Set the text color to the active link color */
+  font-weight: bold; /* Make the link text bold */
 }
 
 .card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-medium);
+  margin: var(--spacing-medium) 0;
 }
