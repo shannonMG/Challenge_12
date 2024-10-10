@@ -1,5 +1,5 @@
 const Portfolio = () => {
-    return <div>Portfolio Placeholder Content</div>;
+    return <div>We will have multiple project compontents rendered here.</div>;
   };
 
 export default Portfolio;

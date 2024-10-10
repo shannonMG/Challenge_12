@@ -17,12 +17,12 @@ function Header (){
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink exact to = "/contact">
+                    <NavLink to = "/contact">
                      Contact
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink exact to = "/resume">
+                    <NavLink to = "/resume">
                      Resume
                     </NavLink>
                 </li>

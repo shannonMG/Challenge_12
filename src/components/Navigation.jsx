@@ -10,22 +10,22 @@ function Navigation (){
         <nav>
             <ul>
                 <li>
-                    <NavLink exact to = "/" className = {getActiveClass('/')}>
+                    <NavLink to = "/" className = {getActiveClass('/')}>
                     About Me
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink exact to = "/portfolio" className = {getActiveClass('/portfolio')}>
+                    <NavLink to = "/portfolio" className = {getActiveClass('/portfolio')}>
                     Portfolio
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink exact to = "/contact" className = {getActiveClass('/contact')}>
+                    <NavLink to = "/contact" className = {getActiveClass('/contact')}>
                     Contact
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink exact to = "/resume" className = {getActiveClass('/resume')}>
+                    <NavLink to = "/resume" className = {getActiveClass('/resume')}>
                     Resume
                     </NavLink>
                 </li>
