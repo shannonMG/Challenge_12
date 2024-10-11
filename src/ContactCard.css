@@ -1,0 +1,61 @@
+.contact-card {
+    max-width: 400px;
+    margin: 20px auto; /* Added margin for top/bottom spacing */
+    background-color: var(--accent-color-1);
+    color: var(--primary-text-color);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-form {
+    width: 100%;
+    padding: var(--spacing-medium);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+    box-sizing: border-box; /* Ensures padding does not increase the width beyond card width */
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Take full width of the form */
+  }
+  
+  .form-field label {
+    margin-bottom: var(--spacing-small);
+    font-weight: var(--heading-font-weight);
+    color: var(--primary-text-color); /* Make label text more readable */
+  }
+  
+  .form-field input,
+  .form-field textarea {
+    width: 100%;
+    padding: var(--spacing-small);
+    border: 1px solid var(--secondary-text-color);
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding does not overflow the width */
+  }
+  
+  .submit-button {
+    width: 100%; /* Make the button span the full width */
+    padding: var(--spacing-small);
+    background-color: var(--accent-color-2);
+    color: var(--primary-text-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: var(--heading-font-weight);
+    transition: background-color var(--transition-duration) var(--transition-ease);
+  }
+  
+  .submit-button:hover {
+    background-color: var(--highlight-color);
+  }
+  
