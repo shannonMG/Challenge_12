@@ -1,10 +1,10 @@
 import React from 'react';
-import '../index.css';
+import '../ContactCard.css';
 
 const Contact = () => {
   return (
-    <div className="contact-form-container">
-      <h2>Contact Me</h2>
+    <div className="contact-card">
+      <h2>Let's Chat!</h2>
       <form className="contact-form">
         {/* Name Field */}
         <div className="form-field">
