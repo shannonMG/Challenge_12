@@ -1,36 +1,16 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import Navigation from './Navigation'; // Adjust the path if necessary
 
-function Header (){
-    return(
-     <header>
-     <h2>ShannonMG</h2>
-        <nav>
-            <ul>
-                <li>
-                    <NavLink exact to = "/">
-                     About Me
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to = "/portfolio">
-                     Portfolio
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to = "/contact">
-                     Contact
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to = "/resume">
-                     Resume
-                    </NavLink>
-                </li>
-            </ul>
-        </nav>
-     </header>
+function Header() {
+    return (
+      <header className="wrapper" >
+        <div className="header-container">
+          <h2>ShannonMG</h2>
+          <Navigation />
+        </div>
+      </header>
     );
-}
-
+  }
+  
 export default Header;
+

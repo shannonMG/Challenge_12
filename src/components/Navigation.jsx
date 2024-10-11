@@ -3,7 +3,6 @@ import {NavLink, useLocation } from 'react-router-dom';
 
 function Navigation (){
   const location = useLocation();
-
   const getActiveClass = (path) => (location.pathname ===path ? 'active' : '');
 
     return (

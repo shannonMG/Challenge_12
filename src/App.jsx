@@ -1,14 +1,16 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Navigation from './components/Navigation';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css'
 
 function App() {
   return (
-    <div>
-      <Navigation />
+    <div className ="app-wrapper">
+      <Header />
+      <main className= "content=card"></main>
       <Outlet />
-
+      <Footer />
     </div>
   );
 }
