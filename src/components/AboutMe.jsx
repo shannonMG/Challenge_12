@@ -3,7 +3,8 @@ import '../index.css';
 
 const AboutMe = () => {
   return (
-    <section className="contact-card">
+    <section className="about-me">
+      
       <h2>About Me</h2>
       <p>
       With a teaching background that shaped my love for simplifying the complex, my journey to becoming a developer feels like a natural evolution. 

@@ -30,25 +30,27 @@
   
   /* General Styles */
   body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family);
     margin: 0;
-    padding: 0;
-    background-color: #628395; /* Background color based on your provided palette */
+    padding: 20px;
+    background-color: var(--background-color);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: center; /* Horizontally center the app */
     min-height: 100vh;
+    box-sizing: border-box;
+
 
   /* App Wrapper */
   .app-wrapper {
-    width: 100%;
-    max-width: 1200px; /* Set a max-width for the entire app */
+    width: 600px;
+    height: 1400px;
     margin: 0 auto; /* Center the wrapper horizontally */
     padding: var(--spacing-medium); /* Add some padding to prevent content from touching the edges */
     background-color: var(--primary-text-color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     overflow: hidden;
+    box-sizing: border-box;
   }
  /* Header */
   header {

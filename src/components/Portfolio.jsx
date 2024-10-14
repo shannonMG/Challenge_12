@@ -1,11 +1,12 @@
 import React from 'react';
 import '../index.css'; 
 import ProjectCard from './Project';
+import '../ProjectCard.css'
 
 const Portfolio = () => {
   return (
-    <div className="portfolio">
-      <h2>My Projects</h2>
+    <div>
+      <h2>My Creations!</h2>
       <div className="projects-container">
         {/* First ProjectCard */}
         <ProjectCard 
@@ -27,6 +28,70 @@ const Portfolio = () => {
 
         {/* More ProjectCards */}
         <ProjectCard 
+          image="/path/to/portfolio.jpg"
+          title="Personal Portfolio"
+          summary="A portfolio website built with React to showcase my projects and skills."
+          githubLink="https://github.com/your-github/portfolio-project"
+          deployedLink="https://portfolio-live.com"
+        />
+         <ProjectCard 
+          image="/path/to/portfolio.jpg"
+          title="Personal Portfolio"
+          summary="A portfolio website built with React to showcase my projects and skills."
+          githubLink="https://github.com/your-github/portfolio-project"
+          deployedLink="https://portfolio-live.com"
+        />
+         <ProjectCard 
+          image="/path/to/portfolio.jpg"
+          title="Personal Portfolio"
+          summary="A portfolio website built with React to showcase my projects and skills."
+          githubLink="https://github.com/your-github/portfolio-project"
+          deployedLink="https://portfolio-live.com"
+        />
+         <ProjectCard 
+          image="/path/to/portfolio.jpg"
+          title="Personal Portfolio"
+          summary="A portfolio website built with React to showcase my projects and skills."
+          githubLink="https://github.com/your-github/portfolio-project"
+          deployedLink="https://portfolio-live.com"
+        />
+         <ProjectCard 
+          image="/path/to/portfolio.jpg"
+          title="Personal Portfolio"
+          summary="A portfolio website built with React to showcase my projects and skills."
+          githubLink="https://github.com/your-github/portfolio-project"
+          deployedLink="https://portfolio-live.com"
+        />
+         <ProjectCard 
+          image="/path/to/portfolio.jpg"
+          title="Personal Portfolio"
+          summary="A portfolio website built with React to showcase my projects and skills."
+          githubLink="https://github.com/your-github/portfolio-project"
+          deployedLink="https://portfolio-live.com"
+        />
+         <ProjectCard 
+          image="/path/to/portfolio.jpg"
+          title="Personal Portfolio"
+          summary="A portfolio website built with React to showcase my projects and skills."
+          githubLink="https://github.com/your-github/portfolio-project"
+          deployedLink="https://portfolio-live.com"
+        />
+
+        <ProjectCard 
+          image="/path/to/portfolio.jpg"
+          title="Personal Portfolio"
+          summary="A portfolio website built with React to showcase my projects and skills."
+          githubLink="https://github.com/your-github/portfolio-project"
+          deployedLink="https://portfolio-live.com"
+        />
+         <ProjectCard 
+          image="/path/to/portfolio.jpg"
+          title="Personal Portfolio"
+          summary="A portfolio website built with React to showcase my projects and skills."
+          githubLink="https://github.com/your-github/portfolio-project"
+          deployedLink="https://portfolio-live.com"
+        />
+         <ProjectCard 
           image="/path/to/portfolio.jpg"
           title="Personal Portfolio"
           summary="A portfolio website built with React to showcase my projects and skills."

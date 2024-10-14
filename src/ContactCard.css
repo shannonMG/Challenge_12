@@ -1,4 +1,4 @@
-.contact-card {
+.contact-card, .about-me  {
     max-width: 400px;
     margin: 20px auto; /* Added margin for top/bottom spacing */
     background-color: var(--accent-color-1);
