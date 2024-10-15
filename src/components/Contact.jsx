@@ -5,7 +5,7 @@ import '../index.css'
 const Contact = () => {
   return (
     <div className="card contact-card">
-      <h2>Let's Chat!</h2>
+      <h2 className= "contact-title">Let's Chat!</h2>
       <form className="contact-form">
         {/* Name Field */}
         <div className="form-field">

@@ -1,3 +1,5 @@
+.card contact-card /*why i sthis working??*/
+
 .contact-card   {
     max-width: 600px;
     margin: 20px auto; /* Added margin for top/bottom spacing */
@@ -10,6 +12,12 @@
     flex-direction: column;
     align-items: center;
   }
+  
+  .contact-title {
+    color: var(--primary-text-color);
+    text-align: center; /* Correct text alignment */
+}
+
   .contact-form {
     width: 100%;
     padding: var(--spacing-medium);

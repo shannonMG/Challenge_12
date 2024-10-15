@@ -5,16 +5,16 @@ const AboutMe = () => {
   return (
     <div className="about-me">
       {/* Image Section */}
-      <section className="card">
+      <section className="card image-container">
         <img 
-          src="path-to-your-image.jpg" 
+          src="../images/headshot.png" 
           alt="A portrait or graphic representing me" 
           className="about-me-image"
         />
       </section>
 
       {/* Text Section */}
-      <section className="card">
+      <section className="card text-container">
         <h2>Welcome!</h2>
         <p>
           With a teaching background that shaped my love for simplifying the complex, 

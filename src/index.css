@@ -171,3 +171,42 @@
     border-radius: 50%; 
     transition: transform 0.3s, box-shadow 0.3s, filter 0.3s, fill 0.3s;
   }
+  .about-me-container {
+    text-align: center;
+    display: flex; /* Align image and text side by side */
+    max-width: 800px; /* Limit total width */
+    box-sizing: border-box;
+  }
+  
+  /* Image Section Styling */
+ .image-container {
+  display: inline-block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+}
+  
+  .about-me-image {
+    align-self: center;
+    width: 300px; /* Restrict the image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  }
+  
+  /* Text Section Styling */
+  .text-container {
+    text-align: left; /* Align text to the left */
+    padding: 10px; /* Add internal spacing */
+  }
+  
+  .text-container h2 {
+    margin: 0 0 10px; /* Add space below the heading */
+    font-weight: bold;
+    color: var(--primary-text-color);
+  }
+  
+  .text-container p {
+    margin: 0;
+    line-height: 1.6; /* Improve readability */
+    color: var(--primary-text-color);
+  }
