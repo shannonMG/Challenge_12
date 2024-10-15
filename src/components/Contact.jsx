@@ -3,7 +3,7 @@ import '../ContactCard.css';
 
 const Contact = () => {
   return (
-    <div className="contact-card">
+    <div className="card contact-card">
       <h2>Let's Chat!</h2>
       <form className="contact-form">
         {/* Name Field */}

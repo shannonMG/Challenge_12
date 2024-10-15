@@ -1,9 +1,21 @@
+
+
+.projects-container {
+  display: grid; /* Use CSS Grid for alignment */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between cards */
+  max-width: 640px; /* Ensure the container fits within your app's width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 10px; /* Optional: Padding inside the container */
+  box-sizing: border-box; /* Prevent overflow issues */
+}
 .project-card {
-    width: 300px; /* Set desired width */
-    height: 200px; /* Set desired height */
-    perspective: 1000px; /* Creates the 3D effect for the flipping */
-    margin: 20px; /* Add some margin for spacing */
-  }
+  width: 180px; /* Take full width of the grid cell */
+  aspect-ratio: 1/1;
+  perspective: 1000px; /* For 3D effect */
+  overflow: hidden;
+  box-sizing: border-box;
+}
   
   .card-inner {
     width: 100%;
@@ -11,6 +23,7 @@
     transition: transform 0.8s var(--transition-ease); /* Duration and easing of the flip */
     transform-style: preserve-3d; /* Ensure both sides are in the 3D space */
     position: relative; /* Position for inner alignment */
+    transform-origin: center;
   }
   
   .project-card:hover .card-inner {
@@ -25,6 +38,7 @@
     backface-visibility: hidden; /* Hide the opposite side when it's not facing the user */
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    box-sizing: border-box
   }
   
   /* Front side styling */

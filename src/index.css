@@ -30,25 +30,27 @@
   
   /* General Styles */
   body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family);
     margin: 0;
-    padding: 0;
-    background-color: #628395; /* Background color based on your provided palette */
+    padding: 20px;
+    background-color: var(--background-color);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: center; /* Horizontally center the app */
     min-height: 100vh;
+    box-sizing: border-box;
+
 
   /* App Wrapper */
   .app-wrapper {
-    width: 100%;
-    max-width: 1200px; /* Set a max-width for the entire app */
+    width: 640px;
+    height: 800 px;
     margin: 0 auto; /* Center the wrapper horizontally */
     padding: var(--spacing-medium); /* Add some padding to prevent content from touching the edges */
     background-color: var(--primary-text-color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     overflow: hidden;
+    box-sizing: border-box;
   }
  /* Header */
   header {
@@ -113,13 +115,79 @@
     padding: var(--spacing-medium);
     margin: var(--spacing-medium) 0;
   }
+  .portfolio-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;    /* Center elements horizontally */
+    width: 100%;            /* Ensure it spans the full width of the parent */
+    padding: 20px 0;        /* Optional padding for spacing */
+    gap: 20px;              /* Add space between title and projects */
+    box-sizing: border-box;
+  }
+
+
+  .portfolio-title-card {
+    display: inline-block;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically (if needed) */
+
+  }
+  .portfolio-title-card h1 {
+    margin: 0 auto;          /* Center horizontally */
+    white-space: nowrap;     /* Prevents text from wrapping */
+    padding: 10px 20px;      /* Optional padding for some spacing */
+    background-color: #f0f0f0; /* Optional background for visibility */
+    border-radius: 8px;      /* Optional rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    font-size: 2rem;         /* Adjust the font size as needed */
+    text-align: center;
+  }
   
   /* Footer */
   footer {
     background-color: var(--accent-color-1);
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
     padding: var(--spacing-medium);
-    text-align: center;
     color: var(--primary-text-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
   }
+
+  .icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; /* Spread icons across the entire footer */
+  }
+
+  .icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s, fill 0.3s;
+  }
+
+  .icon-link svg {
+    width: 100%; /* Make the SVG fill the entire container */
+    height: 100%;
+    display: block; /* Ensure no extra spaces inside the SVG */
+    transition: fill 0.3s;
+  }
+  
+
+  
+  .icon-link:hover svg path {
+    fill: var(--highlight-color); /* Change SVG path color */
+  }
+  
+  /* SVG icon styling */
+  .icon-link svg {
+    width: 60%; /* Adjust to fit inside circle */
+    height: 60%;
+    transition: fill 0.3s; /* Smooth color transition */
+  }
+  
