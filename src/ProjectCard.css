@@ -1,22 +1,20 @@
+
+
+.projects-container {
+  display: grid; /* Use CSS Grid for alignment */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between cards */
+  max-width: 640px; /* Ensure the container fits within your app's width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 10px; /* Optional: Padding inside the container */
+  box-sizing: border-box; /* Prevent overflow issues */
+}
 .project-card {
-  width: calc((100% / 3) - 20px); /* Width adjusted for 3 cards per row with margins */
-  height: 180px; /* Keep the same height */
-  perspective: 1000px;
-  margin: 10px; /* Margin for spacing between cards */
+  width: 180px; /* Take full width of the grid cell */
+  aspect-ratio: 1/1;
+  perspective: 1000px; /* For 3D effect */
   overflow: hidden;
   box-sizing: border-box;
-}
-
-.project-container {
-  display: flex;
-  flex-wrap: wrap; /* Ensure cards wrap into multiple rows */
-  justify-content: space-between; /* Space evenly between columns */
-  width: 100%; /* Take full available width */
-  max-width: 400px; /* Matches the width of your app */
-  margin: 0 auto; /* Center horizontally */
-  padding: 10px; /* Optional padding around the container */
-  box-sizing: border-box; /* Prevents overflow issues */
-  gap: 10px; /* Space between rows */
 }
   
   .card-inner {

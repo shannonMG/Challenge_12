@@ -42,8 +42,8 @@
 
   /* App Wrapper */
   .app-wrapper {
-    width: 600px;
-    height: 1400px;
+    width: 640px;
+    height: 800 px;
     margin: 0 auto; /* Center the wrapper horizontally */
     padding: var(--spacing-medium); /* Add some padding to prevent content from touching the edges */
     background-color: var(--primary-text-color);
@@ -119,9 +119,48 @@
   /* Footer */
   footer {
     background-color: var(--accent-color-1);
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
     padding: var(--spacing-medium);
-    text-align: center;
     color: var(--primary-text-color);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
   }
+
+  .icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; /* Spread icons across the entire footer */
+  }
+
+  .icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s, fill 0.3s;
+  }
+
+  .icon-link svg {
+    width: 100%; /* Make the SVG fill the entire container */
+    height: 100%;
+    display: block; /* Ensure no extra spaces inside the SVG */
+    transition: fill 0.3s;
+  }
+  
+
+  
+  .icon-link:hover svg path {
+    fill: var(--highlight-color); /* Change SVG path color */
+  }
+  
+  /* SVG icon styling */
+  .icon-link svg {
+    width: 60%; /* Adjust to fit inside circle */
+    height: 60%;
+    transition: fill 0.3s; /* Smooth color transition */
+  }
+  
