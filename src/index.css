@@ -115,6 +115,33 @@
     padding: var(--spacing-medium);
     margin: var(--spacing-medium) 0;
   }
+  .portfolio-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;    /* Center elements horizontally */
+    width: 100%;            /* Ensure it spans the full width of the parent */
+    padding: 20px 0;        /* Optional padding for spacing */
+    gap: 20px;              /* Add space between title and projects */
+    box-sizing: border-box;
+  }
+
+
+  .portfolio-title-card {
+    display: inline-block;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically (if needed) */
+
+  }
+  .portfolio-title-card h1 {
+    margin: 0 auto;          /* Center horizontally */
+    white-space: nowrap;     /* Prevents text from wrapping */
+    padding: 10px 20px;      /* Optional padding for some spacing */
+    background-color: #f0f0f0; /* Optional background for visibility */
+    border-radius: 8px;      /* Optional rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    font-size: 2rem;         /* Adjust the font size as needed */
+    text-align: center;
+  }
   
   /* Footer */
   footer {
