@@ -4,18 +4,13 @@ import '../ProjectCard.css';
 function ProjectCard({ svgContent, image, title, summary, githubLink, deployedLink }) {
   return (
     <div className="project-card">
-      <div className="card-inner">
-        {/* Front Side */}
-        <div className="card-front">
-          {svgContent ? (
-            <div
-              className="project-svg"
-              dangerouslySetInnerHTML={{ __html: svgContent }} // Inline SVG
-            />
-          ) : (
-            <img src={image} alt={title} className="project-image" />
-          )}
-        </div>
+    <div className="card-inner">
+      {/* Front Side */}
+      <div className="card-front">
+        <h3>{title}</h3>
+        <img src={image} alt={title} className="project-image" />
+      </div>
+
 
         {/* Back Side */}
         <div className="card-back">

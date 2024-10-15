@@ -1,5 +1,6 @@
 import React from 'react';
 import '../ContactCard.css';
+import '../index.css'
 
 const Contact = () => {
   return (

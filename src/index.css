@@ -42,7 +42,7 @@
 
   /* App Wrapper */
   .app-wrapper {
-    width: 640px;
+    width: 800px;
     height: 800 px;
     margin: 0 auto; /* Center the wrapper horizontally */
     padding: var(--spacing-medium); /* Add some padding to prevent content from touching the edges */
@@ -88,12 +88,12 @@
   }
   
   nav a:hover {
-    color: var(--accent-color-2);
+    color: var(--highlight-color);
   }
   
   /* Buttons */
   .button {
-    background-color: var(--accent-color-2);
+    background-color: var(--background-color);
     color: var(--primary-text-color);
     border: none;
     padding: var(--spacing-small) var(--spacing-medium);
@@ -130,6 +130,7 @@
     display: inline-block;
     justify-content: center; /* Center horizontally */
     align-items: center;     /* Center vertically (if needed) */
+    color: var(--primary-text-color)
 
   }
   .portfolio-title-card h1 {
@@ -170,24 +171,3 @@
     border-radius: 50%; 
     transition: transform 0.3s, box-shadow 0.3s, filter 0.3s, fill 0.3s;
   }
-
-  .icon-link svg {
-    width: 100%; /* Make the SVG fill the entire container */
-    height: 100%;
-    display: block; /* Ensure no extra spaces inside the SVG */
-    transition: fill 0.3s;
-  }
-  
-
-  
-  .icon-link:hover svg path {
-    fill: var(--highlight-color); /* Change SVG path color */
-  }
-  
-  /* SVG icon styling */
-  .icon-link svg {
-    width: 60%; /* Adjust to fit inside circle */
-    height: 60%;
-    transition: fill 0.3s; /* Smooth color transition */
-  }
-  

@@ -1,4 +1,4 @@
-.contact-card,   {
+.contact-card   {
     max-width: 600px;
     margin: 20px auto; /* Added margin for top/bottom spacing */
     background-color: var(--accent-color-1);
@@ -10,7 +10,6 @@
     flex-direction: column;
     align-items: center;
   }
-  
   .contact-form {
     width: 100%;
     padding: var(--spacing-medium);
@@ -46,7 +45,7 @@
   .submit-button {
     width: 100%; /* Make the button span the full width */
     padding: var(--spacing-small);
-    background-color: var(--accent-color-2);
+    background-color: var(--background-color);
     color: var(--primary-text-color);
     border: none;
     border-radius: var(--border-radius);
