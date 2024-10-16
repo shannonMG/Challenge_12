@@ -176,6 +176,8 @@
     display: flex; /* Align image and text side by side */
     max-width: 800px; /* Limit total width */
     box-sizing: border-box;
+    justify-content: center;
+   
   }
   
   /* Image Section Styling */
