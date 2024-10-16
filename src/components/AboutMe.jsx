@@ -3,7 +3,7 @@ import '../index.css';
 
 const AboutMe = () => {
   return (
-    <div className="about-me">
+    <div className="about-me-container">
       {/* Image Section */}
       <section className="card image-container">
         <img 
