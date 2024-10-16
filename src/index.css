@@ -129,7 +129,7 @@
   .portfolio-title-card {
     display: inline-block;
     justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically (if needed) */
+    align-items: center;    
     color: var(--primary-text-color)
 
   }
@@ -159,7 +159,7 @@
   .icon-container {
     display: flex;
     justify-content: space-evenly;
-    width: 100%; /* Spread icons across the entire footer */
+    width: 100%; 
   }
 
   .icon-link {
@@ -177,6 +177,8 @@
     max-width: 800px; /* Limit total width */
     box-sizing: border-box;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
    
   }
   
@@ -212,3 +214,62 @@
     line-height: 1.6; /* Improve readability */
     color: var(--primary-text-color);
   }
+
+  /*resume component css*/
+
+  .resume-icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ensure space between icons */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .resume-icon-container img {
+    flex: 1 1 150px; /* Each image will be treated like a flex item */
+    max-width: 150px;
+    margin: 10px;
+    height: auto;
+    display: block;
+  }
+
+  .resume-title-card {
+    width: 200px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    
+    color: var(--primary-text-color)
+
+  }
+  .resume-title-card h1 {
+    margin: 0 auto;          /* Center horizontally */
+    white-space: nowrap;     /* Prevents text from wrapping */
+    padding: 10px 20px;      /* Optional padding for some spacing */
+    background-color: #f0f0f0; /* Optional background for visibility */
+    border-radius: 8px;      /* Optional rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    font-size: 2rem;         /* Adjust the font size as needed */
+    text-align: center;
+  }
+  .resume-button-container {
+    display: flex;
+    padding: var(--spacing-small);
+    color: var(--primary-text-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: var(--heading-font-weight);
+    transition: background-color var(--transition-duration) var(--transition-ease);
+  }
+
+  
+  .submit-button:hover {
+    background-color: var(--highlight-color);
+  }
+
+  .resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
