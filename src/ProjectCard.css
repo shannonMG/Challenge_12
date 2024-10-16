@@ -2,15 +2,18 @@
 
 .projects-container {
   display: grid; /* Use CSS Grid for alignment */
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px; /* Space between cards */
-  max-width: 640px; /* Ensure the container fits within your app's width */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 15px; /* 15px space between cards */
+  max-width: 100%; /* Ensure it doesn't overflow the viewport */
+  width: calc(800px + 30px); /* Total width with 15px padding on both sides */
   margin: 0 auto; /* Center the container horizontally */
-  padding: 10px; /* Optional: Padding inside the container */
-  box-sizing: border-box; /* Prevent overflow issues */
+  box-sizing: border-box; /* Ensure padding is included in the size */
+  overflow: hidden; /* Prevent overflow issues */
 }
+
 .project-card {
-  width: 180px; /* Take full width of the grid cell */
+  width: 100%; /* Take full width of the grid cell */
+  height: 150px;
   aspect-ratio: 1/1;
   perspective: 1000px; /* For 3D effect */
   overflow: hidden;
@@ -42,48 +45,80 @@
   }
   
   /* Front side styling */
+
   .card-front {
     background-color: var(--accent-color-1);
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack title and image vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 10px; /* Add space inside the card */
+    box-sizing: border-box; /* Include padding in size calculations */
+    gap: 10px; /* Space between the title and image */
   }
   
   .project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure image covers the card front */
-    border-radius: var(--border-radius);
+    max-width: 90%; /* Ensure the image stays within the card */
+    max-height: 70%; /* Prevent the image from taking too much height */
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+    border-radius: var(--border-radius); /* Optional rounded corners */
+    display: block; /* Ensure no inline spacing */
   }
+  
+  .card-front h3 {
+    margin: 0; /* Remove extra margins */
+    font-size: 1.0rem; /* Adjust font size */
+    font-weight: bold;
+    text-align: center; /* Center-align the text */
+    color: var(--primary-text-color);
+  }
+
   
   /* Back side styling */
   .card-back {
-    background-color: var(--secondary-text-color); /* A neutral color for readability */
-    color: var(--primary-text-color);
-    transform: rotateY(180deg); /* Flip the back side to start hidden */
+    background-color: var(--secondary-text-color); /* Neutral background */
+    color: var(--primary-text-color);              /* Text color */
+    transform: rotateY(180deg);                    /* Flip back side */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly; /* Even spacing between elements */
     padding: var(--spacing-medium);
+    text-align: center;
+    gap: 5px; /* Space between content blocks */
   }
   
+  /* Title styling inside the back of the card */
   .card-back h3 {
-    margin: var(--spacing-small) 0;
+    margin: 0;
+    font-size: 1.0rem;
+    font-weight: bold;
   }
   
+  /* Paragraph styling for the description */
   .card-back p {
     font-weight: var(--body-font-weight);
-    margin-bottom: var(--spacing-small);
-    text-align: center;
+    margin: 0;
+    font-size: 12;
+    line-height: 1.0; /* Improve readability */
   }
   
+  /* Links container */
+  .links {
+    display: flex;
+    gap: 15px; /* Space between the links */
+  }
+  
+  /* Styling for the links */
   .links a {
-    color: var(--highlight-color);
+    color: var(--background-color); /* Match links to background color */
     text-decoration: none;
     font-weight: bold;
-    margin: var(--spacing-small);
     transition: color var(--transition-duration) var(--transition-ease);
   }
   
+  /* Hover effect for the links */
   .links a:hover {
-    color: var(--accent-color-2);
+    color: var(--accent-color-2); /* Change on hover */
   }
-  
+
