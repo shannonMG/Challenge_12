@@ -1,7 +1,9 @@
+import '../index.css'
+
 const Resume = () => {
     return (<div className="resume">
-    <section className="card resume-title-card">
-    <h2 className="">My Proficienes </h2>
+    <section className="card">
+    <h2 className= "portfolio-title-card">My proficiencies:</h2>
     </section>
 
     <section className="card">
@@ -48,13 +50,9 @@ const Resume = () => {
           className=""/>
         </ul>
 
-      </section>
-      
-      <section className="card portfolio-title-card">
         <button type="submit" className="submit-button"> Want to learn more about me? Download my Resume!</button>
+
       </section>
-
-
     </div>);
   };
 

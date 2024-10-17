@@ -7,7 +7,7 @@ import '../ProjectCard.css'
 const Portfolio = () => {
   return (
     <div className = "portfolio-container">
-      <h1 className="card portfolio-title-card">My Creations:</h1>
+      <h2 className="card portfolio-title-card">My Creations:</h2>
       <div className="projects-container">
         {/* First ProjectCard */}
         <ProjectCard 

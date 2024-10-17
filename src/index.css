@@ -80,6 +80,7 @@
     text-decoration: none;
     color:  #628395;
     font-weight: bold;
+    font-size: large;
     transition: color var(--transition-duration) var(--transition-ease);
   }
   
@@ -131,17 +132,6 @@
     justify-content: center; /* Center horizontally */
     align-items: center;    
     color: var(--primary-text-color)
-
-  }
-  .portfolio-title-card h1 {
-    margin: 0 auto;          /* Center horizontally */
-    white-space: nowrap;     /* Prevents text from wrapping */
-    padding: 10px 20px;      /* Optional padding for some spacing */
-    background-color: #f0f0f0; /* Optional background for visibility */
-    border-radius: 8px;      /* Optional rounded corners */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    font-size: 2rem;         /* Adjust the font size as needed */
-    text-align: center;
   }
   
   /* Footer */
@@ -162,15 +152,22 @@
     width: 100%; 
   }
 
-  .icon-link {
+  .icon-link svg {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80px;
     height: 80px;
     border-radius: 50%; 
-    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s, fill 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, fill 0.3s ease;
+    fill: var(--background-color);
   }
+  
+  .icon-link:hover svg {
+    fill: var(--highlight-color); 
+     
+  }
+
   .about-me-container {
     text-align: center;
     display: flex; /* Align image and text side by side */
@@ -265,6 +262,7 @@
   
   .submit-button:hover {
     background-color: var(--highlight-color);
+  
   }
 
   .resume{
