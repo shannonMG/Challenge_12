@@ -11,36 +11,36 @@ const Portfolio = () => {
       <div className="projects-container">
         {/* First ProjectCard */}
         <ProjectCard 
-          image="../images/calculator.png"
-          title="Calculator Project"
-          summary="A simple calculator built with React that performs basic arithmetic operations."
-          githubLink="https://github.com/your-github/calculator-project"
-          deployedLink="https://calculator-live.com"
+          image="../images/book.png"
+          title="Pre-Work Study Guide"
+          summary="My first dabble into coding! This is the pre-work study guide I created prior to my bootcamp."
+          githubLink="https://github.com/shannonMG/prework-study-guide"
+          deployedLink="https://shannonmg.github.io/prework-study-guide/"
         />
 
         {/* Second ProjectCard */}
         <ProjectCard 
-          image="../images/storm.png"
-          title="Web API Project"
-          summary="A RESTful Web API project that interacts with a public API to retrieve data."
-          githubLink="https://github.com/your-github/webapi-project"
+          image="../images/reading-book.png"
+          title="Read-Me Generator"
+          summary="A CLI that prompts the user for information in order to produce a README file"
+          githubLink="https://github.com/shannonMG/Challenge-7"
           deployedLink="https://webapi-live.com"
         />
 
         {/* More ProjectCards */}
         <ProjectCard 
-          image="../images/number-3.png"
-          title="Project 3"
-          summary="This will store a brief summary of the project"
-          githubLink="https://github.com/your-github/portfolio-project"
-          deployedLink="https://portfolio-live.com"
+          image="../images/car.png"
+          title="Vehicle Builder"
+          summary="A CLI application that allows user to build vehicles and perform actions with them."
+          githubLink="https://github.com/shannonMG/challenge-8-vehicle-builder"
+          deployedLink="https://drive.google.com/file/d/1EFne-v2JNCAo38XWKmdk9YZ4b57e53B6/view?usp=sharing"
         />
          <ProjectCard 
-          image="../images/number-4.png"
-          title="Project 4"
-          summary="This will store a brief summary of the project"
-         githubLink="https://github.com/your-github/portfolio-project"
-          deployedLink="https://portfolio-live.com"
+          image="../images/employee.png"
+          title="Employee Management System"
+          summary="A CLI application that allows user to manage and update employee records."
+         githubLink="https://github.com/shannonMG/Challenge_10_Restarted"
+          deployedLink="https://drive.google.com/file/d/1GEHkSX4mKjI7CvW8S4q0_sJBRBRdLxcw/view?usp=sharing"
         />
          <ProjectCard 
           image="../images/number-5.png"
