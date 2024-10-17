@@ -1,41 +1,30 @@
 :root {
     /* Color Palette */
-    --background-color: #628395; /* Background color */
-    --primary-text-color: #ffffff; /* White text for readability on dark background */
-    --secondary-text-color: #96897B; /* Neutral gray for secondary text */
-    --accent-color-1: #DBAD6A; /* Accent color for buttons, highlights */
-    --accent-color-2: #CF995F; /* Accent for secondary buttons or other elements */
-    --highlight-color: #D0CE7C; /* Highlight color for special elements */
-  
-    /* Typography */
+    --background-color: #628395; 
+    --primary-text-color: #ffffff; 
+    --secondary-text-color: #96897B; 
+    --accent-color-1: #DBAD6A; 
+    --accent-color-2: #CF995F; 
+    --highlight-color: #D0CE7C; 
     --font-family: 'Roboto', sans-serif;
     --heading-font-weight: bold;
     --body-font-weight: normal;
-  
-    /* Spacing */
     --spacing-small: 8px;
     --spacing-medium: 16px;
     --spacing-large: 32px;
-  
-    /* Border */
     --border-radius: 8px;
-  
-    /* Shadows */
     --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  
-    /* Transition */
     --transition-duration: 0.3s;
     --transition-ease: ease-in-out;
   }
   
-  /* General Styles */
   body {
     font-family: var(--font-family);
     margin: 0;
     padding: 20px;
     background-color: var(--background-color);
     display: flex;
-    justify-content: center; /* Horizontally center the app */
+    justify-content: center; 
     min-height: 100vh;
     box-sizing: border-box;
 
@@ -43,9 +32,9 @@
   /* App Wrapper */
   .app-wrapper {
     width: 800px;
-    height: 800 px;
-    margin: 0 auto; /* Center the wrapper horizontally */
-    padding: var(--spacing-medium); /* Add some padding to prevent content from touching the edges */
+    height: auto px;
+    margin: 0 auto; 
+    padding: var(--spacing-medium); 
     background-color: var(--primary-text-color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -92,7 +81,7 @@
     color: var(--highlight-color);
   }
   
-  /* Buttons */
+  
   .button {
     background-color: var(--background-color);
     color: var(--primary-text-color);
@@ -107,7 +96,6 @@
     background-color: var(--highlight-color);
   }
   
-  /* Cards */
   .card {
     background-color: var(--accent-color-1);
     color: var(--secondary-text-color);
@@ -118,18 +106,18 @@
   }
   .portfolio-container {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;    /* Center elements horizontally */
-    width: 100%;            /* Ensure it spans the full width of the parent */
-    padding: 20px 0;        /* Optional padding for spacing */
-    gap: 20px;              /* Add space between title and projects */
+    flex-direction: column; 
+    align-items: center;    
+    width: 100%;            
+    padding: 20px 0;        
+    gap: 20px;              
     box-sizing: border-box;
   }
 
 
   .portfolio-title-card {
     display: inline-block;
-    justify-content: center; /* Center horizontally */
+    justify-content: center; 
     align-items: center;    
     color: var(--primary-text-color)
   }
@@ -170,8 +158,8 @@
 
   .about-me-container {
     text-align: center;
-    display: flex; /* Align image and text side by side */
-    max-width: 800px; /* Limit total width */
+    display: flex; 
+    max-width: 800px; 
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -188,27 +176,27 @@
   
   .about-me-image {
     align-self: center;
-    width: 300px; /* Restrict the image width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    width: 300px; 
+    height: auto; 
+    border-radius: 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
   }
   
   /* Text Section Styling */
   .text-container {
-    text-align: left; /* Align text to the left */
-    padding: 10px; /* Add internal spacing */
+    text-align: left; 
+    padding: 10px; 
   }
   
   .text-container h2 {
-    margin: 0 0 10px; /* Add space below the heading */
+    margin: 0 0 10px; 
     font-weight: bold;
     color: var(--primary-text-color);
   }
   
   .text-container p {
     margin: 0;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6; 
     color: var(--primary-text-color);
   }
 
@@ -217,14 +205,14 @@
   .resume-icon-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Ensure space between icons */
+    justify-content: space-around; 
     padding: 0;
     list-style: none;
     margin: 0;
   }
   
   .resume-icon-container img {
-    flex: 1 1 150px; /* Each image will be treated like a flex item */
+    flex: 1 1 150px; 
     max-width: 150px;
     margin: 10px;
     height: auto;
@@ -234,7 +222,7 @@
   
 
   .resume-button {
-    width: 50%; /* Make the button span the full width */
+    width: 50%; 
     padding: var(--spacing-large);
     background-color: var(--background-color);
     color: var(--primary-text-color);
@@ -259,8 +247,79 @@
   
   .resume-title-card {
     display: inline-block;
-    justify-content: center; /* Center horizontally */
+    justify-content: center; 
     align-items: center;    
     color: var(--primary-text-color)
 
   }
+
+ 
+@media (max-width: 850px) {
+
+  body {
+    padding: 10px;
+  }
+
+ 
+  .app-wrapper {
+    width: 100%;
+    height: auto;
+    padding: var(--spacing-small);
+  }
+
+  header {
+    padding: var(--spacing-small);
+  }
+
+  
+  nav ul {
+    flex-direction: column;
+    gap: var(--spacing-small); 
+  }
+
+  nav a {
+    font-size: large; 
+  }
+
+  
+  .button {
+    padding: var(--spacing-small) var(--spacing-small); 
+  }
+
+  
+  .card {
+    padding: var(--spacing-small);
+    margin: var(--spacing-small) 0;
+  }
+
+  
+  .portfolio-container {
+    padding: 10px 0;
+    gap: 10px; 
+  }
+
+  
+  .projects-container {
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    width: 100%;
+  }
+
+  
+  .contact-card {
+    max-width: 100%; 
+  }
+
+  
+  .resume-button {
+    width: 100%;
+    padding: var(--spacing-medium);
+  }
+
+ 
+  footer {
+    flex-direction: column; 
+    gap: var(--spacing-small);
+  }
+}
+

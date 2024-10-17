@@ -11,52 +11,52 @@ const Resume = () => {
          
           <img
           src="../images/html-5.png" 
-          alt="A portrait or graphic representing me" 
+          alt="html icon" 
           className="resume-icons"/>
 
           <img
           src="../images/css-3.png" 
-          alt="A portrait or graphic representing me" 
+          alt="css icon" 
           className="resume-icons"/>
 
           <img
           src="../images/typescript.png" 
-          alt="A portrait or graphic representing me" 
+          alt="type script icon" 
           className="resume-icons"/>
 
           <img
           src="../images/api.png" 
-          alt="A portrait or graphic representing me" 
+          alt="api icon" 
           className="resume-icons"/>
 
           <img
           src="../images/react.png" 
-          alt="A portrait or graphic representing me" 
+          alt="react icon" 
           className="resume-icons"/>
 
           <img
           src="../images/github (1).png" 
-          alt="A portrait or graphic representing me" 
+          alt="github icon" 
           className="resume-icons"/>
 
           <img
           src="../images/nodejs.png" 
-          alt="A portrait or graphic representing me" 
+          alt="node.js icon" 
           className=""/>
 
          <img
           src="../images/javascript.png" 
-          alt="A portrait or graphic representing me" 
+          alt="javascript icon" 
           className=""/>
         </ul>
 
         <button
-          type="button"  // Change to "button" so it doesn't submit a form
+          type="button"  
           className="resume-button"
               onClick={() => {
               const link = document.createElement('a');
-              link.href = '../images/SMastrogiovanniResume2024';  // Replace with your actual PDF file path
-              link.download = 'S.Mastrogiovanni-Resume.pdf';  // Name the file to be downloaded
+              link.href = '../images/SMastrogiovanniResume2024';  
+              link.download = 'S.Mastrogiovanni-Resume.pdf';  
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);

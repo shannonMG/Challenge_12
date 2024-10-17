@@ -12,22 +12,22 @@ import './index.css';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,  // App contains Navigation and any other layout components
+    element: <App />,  
     children: [
       {
-        index: true,  // This will render the AboutMe component at the root path "/"
+        index: true,  
         element: <AboutMe />,
       },
       {
-        path: 'portfolio',  // Matches the "/portfolio" NavLink
+        path: 'portfolio', 
         element: <Portfolio />,
       },
       {
-        path: 'contact',  // Matches the "/contact" NavLink
+        path: 'contact',  
         element: <Contact />,
       },
       {
-        path: 'resume',  // Matches the "/resume" NavLink
+        path: 'resume',  
         element: <Resume />,
       },
     ],

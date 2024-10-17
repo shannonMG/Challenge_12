@@ -1,7 +1,7 @@
 import React from 'react';
 import '../ProjectCard.css';
 
-function ProjectCard({ svgContent, image, title, summary, githubLink, deployedLink }) {
+function ProjectCard({image, title, summary, githubLink, deployedLink }) {
   return (
     <div className="project-card">
     <div className="card-inner">
