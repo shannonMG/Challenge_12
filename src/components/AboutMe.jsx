@@ -5,6 +5,11 @@ const AboutMe = () => {
   return (
     <div className="about-me-container">
       {/* Image Section */}
+      <section >
+       <h2 className= "card portfolio-title-card">Welcome!</h2>
+      </section>
+
+
       <section className="card image-container">
         <img 
           src="../images/headshot.png" 
@@ -13,9 +18,10 @@ const AboutMe = () => {
         />
       </section>
 
+    
+
       {/* Text Section */}
       <section className="card text-container">
-        <h2>Welcome!</h2>
         <p>
           With a teaching background that shaped my love for simplifying the complex, 
           my journey to becoming a developer feels like a natural evolution. 

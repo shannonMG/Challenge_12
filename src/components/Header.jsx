@@ -5,7 +5,7 @@ function Header() {
     return (
       <header className="wrapper" >
         <div className="header-container">
-          <h2>ShannonMG</h2>
+          <h1>ShannonMG</h1>
           <Navigation />
         </div>
       </header>
