@@ -50,7 +50,20 @@ const Resume = () => {
           className=""/>
         </ul>
 
-        <button type="submit" className="resume-button"> Want to learn more about me? Download my Resume!</button>
+        <button
+          type="button"  // Change to "button" so it doesn't submit a form
+          className="resume-button"
+              onClick={() => {
+              const link = document.createElement('a');
+              link.href = '../images/SMastrogiovanniResume2024';  // Replace with your actual PDF file path
+              link.download = 'S.Mastrogiovanni-Resume.pdf';  // Name the file to be downloaded
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+              }}
+>
+  Want to learn more about me? Download my Resume!
+</button>
 
       </section>
     </div>);
