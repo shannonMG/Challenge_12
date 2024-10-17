@@ -2,8 +2,8 @@ import '../index.css'
 
 const Resume = () => {
     return (<div className="resume">
-    <section className="card">
-    <h2 className= "portfolio-title-card">My proficiencies:</h2>
+    <section className="">
+    <h2 className= "card resume-title-card">My Proficiencies:</h2>
     </section>
 
     <section className="card">
@@ -50,7 +50,7 @@ const Resume = () => {
           className=""/>
         </ul>
 
-        <button type="submit" className="submit-button"> Want to learn more about me? Download my Resume!</button>
+        <button type="submit" className="resume-button"> Want to learn more about me? Download my Resume!</button>
 
       </section>
     </div>);

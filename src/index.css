@@ -80,7 +80,7 @@
     text-decoration: none;
     color:  #628395;
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
     transition: color var(--transition-duration) var(--transition-ease);
   }
   
@@ -231,43 +231,36 @@
     display: block;
   }
 
-  .resume-title-card {
-    width: 200px;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;    
-    color: var(--primary-text-color)
+  
 
-  }
-  .resume-title-card h1 {
-    margin: 0 auto;          /* Center horizontally */
-    white-space: nowrap;     /* Prevents text from wrapping */
-    padding: 10px 20px;      /* Optional padding for some spacing */
-    background-color: #f0f0f0; /* Optional background for visibility */
-    border-radius: 8px;      /* Optional rounded corners */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    font-size: 2rem;         /* Adjust the font size as needed */
-    text-align: center;
-  }
-  .resume-button-container {
-    display: flex;
-    padding: var(--spacing-small);
+  .resume-button {
+    width: 50%; /* Make the button span the full width */
+    padding: var(--spacing-large);
+    background-color: var(--background-color);
     color: var(--primary-text-color);
+    border: none;
     border-radius: var(--border-radius);
     cursor: pointer;
     font-weight: var(--heading-font-weight);
+    font-size: larger;
     transition: background-color var(--transition-duration) var(--transition-ease);
   }
 
-  
-  .submit-button:hover {
+  .resume-button:hover {
     background-color: var(--highlight-color);
-  
   }
 
   .resume{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   
+  .resume-title-card {
+    display: inline-block;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    
+    color: var(--primary-text-color)
+
+  }
