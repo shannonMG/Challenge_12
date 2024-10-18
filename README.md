@@ -4,7 +4,7 @@ This is my personal portfolio, showcasing web development projects I've worked o
 
 ## Features
 
-- **Interactive Portfolio Page**: Users can explore my projects in an engaging and dynamic way, with a retro, skateboarding theme that adds a unique flair.
+- **Interactive Portfolio Page**: Users can explore my projects in an engaging and dynamic way.
 - **Responsive Design**: The app is optimized for different screen sizes, ensuring a seamless experience on desktops, tablets, and mobile devices.
 - **Project Display**: Each project is presented with key details, including descriptions, technologies used, and links to live demos and repositories.
 
