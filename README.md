@@ -1,6 +1,6 @@
 # Portfolio App
 
-This is my personal portfolio, showcasing web development projects I've worked on. It features an interactive, skateboarding or 90s retro-themed user interface, with media queries implemented for responsiveness across various devices.
+This is my personal portfolio, showcasing web development projects I've worked on. It features an interactive user interface, with media queries implemented for responsiveness across various devices.
 
 ## Features
 
